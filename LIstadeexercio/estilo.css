@@ -1,5 +1,9 @@
+
 *{
     box-sizing: border-box;
+}
+h1{
+    text-align: center;
 }
 body{
     margin: 0%;
@@ -24,7 +28,7 @@ input{
 button.add{
     width: 20%;
     cursor: pointer ;
-    background-color: rgb(102, 247, 102);
+    background-color: rgb(7, 100, 7);
     font-weight: bold;
     border: none;
     height:120px;
@@ -33,7 +37,7 @@ button.add{
     font-size: 20px;
 }
 button:hover{
-    background-color: rgb(255, 52, 52);
+    background-color: rgb(2, 179, 31);
 }
 main{
     display: flex;
@@ -48,5 +52,47 @@ main{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(152, 147, 142);
+    background-color: rgb(255, 255, 255);
+    height: 80px;
+    width: 100%;
+    box-shadow: 0 0 20px #7f7d7d;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+.item.clicado{
+    background: rgb(168, 237, 168);
+}
+.item.clicado .itemNome{
+    text-decoration: line-through;
+    color: gray;
+
+}
+.itemIcone{
+    flex: 20%;
+  /*  border: 1px solid red;*/
+    text-align: center;
+    font-size: 2rem;
+
+}
+.itemNome{
+    flex: 55%;
+   /* border: 1px solid rgb(203, 41, 130);*/
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.itemBotao{
+    flex: 25%;
+   /* border: 1px solid rgb(35, 202, 101);*/
+}
+.delete{
+    background: rgb(2, 167, 5);
+    color: white;
+    border: none;
+    padding: 10%;
+    height: 80px;
+    width: 100%;
+}
+.mdi-check-circle{
+    color: green;
 }
